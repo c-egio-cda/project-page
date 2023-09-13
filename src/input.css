@@ -1,3 +1,5 @@
+@import url("./styles/grid-wrap.css") ;
+
 :root {
     --main-color: #344155;
     --secondary-color: #385961;
@@ -9,6 +11,8 @@ body {
     font-family: var(--font);
     min-width: 700px;
     margin: 0;
+    color: var(--text-color)
+    
 }
 
 html {
@@ -17,6 +21,15 @@ html {
 
 a {
     text-decoration: none;
+}
+
+button {
+    font-family: var(--font);
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 p{
@@ -73,17 +86,6 @@ nav {
     position: relative;
 }
 
-.someText{
-    display: flex;
-    justify-content: center;
-}
-
-.someText div{
-    width: 75%;
-    font-size: 2rem;
-    color: var(--text-color);
-}
-
 .title {
     position: absolute;
     top: 5;
@@ -108,86 +110,19 @@ nav {
     height: 30%;
 }
 
-
-
-.block {
-    scroll-margin-top: 4rem;
-    margin-top: 3.5rem;
-    padding: 5rem 0 0 0;
-}
-
-.grid-title {
-    margin-top: 2rem;
+.someText{
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: var(--text-color);
+}
+
+.someText div{
+    width: 75%;
     font-size: 2rem;
-
-}
-
-.grid-title h2 {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 1rem;
-}
-
-
-.grid-container {
-    padding: 0 0 1rem 0;
-    margin: 0 0 1rem 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center
-}
-
-.grid-item {
-    padding: 2.5rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card {
-    display: flex;
-    align-items: center;
-    background: #000;
     color: var(--text-color);
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
 }
 
-.content {
-    flex-grow: 1;
-    padding: 16px;
-}
 
-.price {
-    font-size: 18px;
-    margin-bottom: 8px;
-}
-
-.button {
-    display: flex;
-    align-items: center;
-}
-
-.image {
-    flex-shrink: 0;
-    width: 100px;
-    height: 100px;
-}
-
-.image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+/* Footer */
 footer{
     display: flex;
     justify-content: space-around;
@@ -202,4 +137,10 @@ footer{
 .footer-elem {
     padding: 1rem;
     margin: 0 4rem;
+}
+
+.footer-elem img{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--text-color)
 }
