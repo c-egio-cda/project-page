@@ -1,4 +1,12 @@
+:root {
+    --main-color: #344155;
+    --secondary-color: #385961;
+    --text-color: antiquewhite;
+    --font: 'Chakra Petch', sans-serif;
+}
+
 body {
+    font-family: var(--font);
     margin: 0;
 }
 
@@ -9,15 +17,50 @@ a {
 
 main {
     width: 100%;
-    background-color: rgb(51 65 85);
-    padding: 2.5rem;
+    background-color: var(--main-color);
 }
 
 header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+nav {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    background-color: var(--secondary-color);
+}
+
+.logo img {
+    max-width: 9rem;
+    height: auto;
+    border-radius: 50%;
+}
+
+.nav-item {
+    padding: 0.05rem 0.7rem;
+    border: 0.3rem solid lightblue;
+    border-radius: 12px;
+}
+
+.nav-item>a {
+    color: var(--text-color);
+}
+
+.banner {
     width: 75%;
-    margin: 0 auto;
+    margin: 3rem auto 0 auto;
     padding: 3.5rem 0;
-    background-color: rgb(107 114 128);
+    background-color: var(--main-color);
     position: relative;
 }
 
@@ -29,11 +72,11 @@ header {
     z-index: 2;
     display: flex;
     justify-content: center;
-    color: antiquewhite;
-    font-family: 'Chakra Petch', sans-serif;
+    color: var(--text-color);
+    /* font-family: 'Chakra Petch', sans-serif; */
 }
 
-.logo {
+.banner-img {
     position: relative;
     z-index: 1;
     display: flex;
@@ -41,34 +84,12 @@ header {
 }
 
 
-.logo>img {
+.banner-img>img {
     width: 85%;
     height: 30%;
 }
 
-nav {
-    width: 80%;
-    margin: 2rem auto 0 auto;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: #352c2c;
-    z-index: 1000;
-}
 
-
-.nav-item {
-    padding: 0.05rem 0.3rem;
-    border: 0.3rem solid lightgrey;
-}
-
-.nav-item>a {
-    color: antiquewhite;
-}
 
 .block {
     padding: 5rem 0 0 0;
@@ -79,7 +100,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
+    /* color: aliceblue; */
+    color: var(--text-color);
     font-size: 2rem;
 
 }
@@ -111,7 +133,8 @@ nav {
     display: flex;
     align-items: center;
     background: #000;
-    color: aliceblue;
+    color: var(--text-color);
+    /* color: aliceblue; */
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
