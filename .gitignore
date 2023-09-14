@@ -1,2 +1,4 @@
-/dist
-/node_modules
+/src/js/code.js
+/src/js/main.js
+/src/js/test.html
+/public/ressources

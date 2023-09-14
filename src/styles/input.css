@@ -1,8 +1,9 @@
-@import url("./styles/grid-wrap.css") ;
+@import url("./grid-wrap.css") ;
 
 :root {
     --main-color: #344155;
-    --secondary-color: #385961;
+    --secondary-color: #000000;
+    --nav-items: #535353;
     --text-color: antiquewhite;
     --font: 'Chakra Petch', sans-serif;
 }
@@ -70,7 +71,7 @@ nav {
 
 .nav-item {
     padding: 0.05rem 0.7rem;
-    border: 0.3rem solid lightblue;
+    border: 0.3rem solid var(--nav-items);
     border-radius: 12px;
 }
 
@@ -147,5 +148,13 @@ footer{
     width: 1.5rem;
     height: 1.5rem;
     background-color: var(--text-color)
+}
+.clicked {
+    background-color: red;
+}
+
+.no-model {
+    background-color: aquamarine;
+    color: #000000;
 }
 
