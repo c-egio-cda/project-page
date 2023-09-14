@@ -20,10 +20,11 @@ function changeColor() {
             alert(`Vous avez click sur ${modelText} `)
         }else{
             this.classList.add("no-model")
-            alert("Modele sans nom :((")
+            alert("Modele sans nom.... :((")
         }
     }
 }
+
 
 //Bind the function to each .toggle (.toggle => button on each card)
 document.querySelectorAll('.toggle').forEach((button) => {
